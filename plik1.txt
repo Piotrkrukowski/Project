@@ -1,0 +1,8 @@
+1) Stworzyć service -  JobService- do komunikacji z API z ofertami pracy
+2) Stworzyć komponent - JobBlockComponent - do wyswietlania podstawowych informacji na widoku wyników wyszukiwania ofert pracy
+3) Stworzyć Query - JobListComponent - do wyświetlenia wyników zapytania wpisanego przez użytkownika
+4) Stworzyć widok - JobDetailsComponent- do wyświetlania szczegółów oferty pracy
+5) Stworzyć kategorie - JobCategory - do wyboru pracy z jakiejś kategorii np. Mechanik, Lekarz
+6) Stworzyć komponent - SwitchViewComponent - do zmiany widoku z list na kaleki i w drugą
+7) Stworzyć komponent - SwitchLanguageComponent - do zmiany języka z Polskiego na Angielski i w drugą
+8) Stworzenie struktury folderów w projekcji
