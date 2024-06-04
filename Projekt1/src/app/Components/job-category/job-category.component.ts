@@ -18,7 +18,7 @@ export class JobCategoryComponent implements OnInit {
 
   ngOnInit(): void {
     this.jobService.fetchCategories().subscribe((result:any)=>{
-      console.log(result);
+
       this.data=result.results;
     }
   )}

@@ -1,0 +1,23 @@
+.Job-Details-Component-Main{
+    width: 18vw;
+    height: 15vh;
+    background-color: aqua;
+    border-radius: 10px;
+    margin: 10px;
+}
+.Job-Details-Component-Header{
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    font-size: 20px;
+}
+.Job-Details-Component-Company{
+    width: 70%;
+    height: 70%;
+    float: left;
+}
+.Job-Details-Component-Salary{
+    width: 30%;
+    height: 70%;
+    float: left;
+}

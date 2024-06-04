@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-
+import { Component, OnInit } from '@angular/core';
+import { JobServicesService } from '../../Services/Features/job-services.service';
 @Component({
   selector: 'app-job-block',
   standalone: true,
@@ -7,6 +7,17 @@ import { Component } from '@angular/core';
   templateUrl: './job-block.component.html',
   styleUrl: './job-block.component.css'
 })
-export class JobBlockComponent {
+export class JobBlockComponent implements OnInit {
 
+  constructor(private jobService: JobServicesService){
+
+  }
+
+  public data:any;
+  
+  ngOnInit(): void {
+    this.jobService.fetchPost().subscribe((result:any)=>{
+      this.data=result.results;
+    })
+  }
 }
