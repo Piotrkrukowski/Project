@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { JobServicesService } from './Services/Features/job-services.service';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +9,16 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
-  title = 'Projekt';
+export class AppComponent implements OnInit {
+  title = 'Projek12';
+
+  constructor(private jobService: JobServicesService){
+
+  }
+
+  ngOnInit(): void {
+    this.jobService.fetchPost().subscribe((result:any)=>{
+      console.log(result);
+    })
+  }
 }
