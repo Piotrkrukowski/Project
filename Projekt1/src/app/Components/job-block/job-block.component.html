@@ -1,16 +1,25 @@
 @for(job of data; track job){
-    <div class="job-block-component-body">
-        <div class="job-block-component-header">
-        {{job.title}}
-        
+    <div class="container bg-light job-block" style="border-radius: 30px;">
+        <div class="row">
+            <div class="col-12">
+                <div class="d-flex justify-content-center">
+                    {{job.title}}
+                </div>
+            </div>
+        </div>  
+        <div class="row">
+            <div class="col-6">
+                <div class="d-flex flex-row">
+                    {{job.location.display_name}}
+                    {{job.company.display_name}}
+                </div> 
+            </div>
+            <div class="col-6">
+                <div class="d-flex justify-content-end">
+                    Salary:
+                    {{job.salary_max}}
+                </div>
+            </div>
         </div>
-        <div class="job-block-component-company">
-            {{job.location.display_name}}<br>
-            {{job.company.display_name}}
-        </div>
-        <div class="job-block-component-salary">
-            Salary:
-            {{job.salary_max}}
-        </div>   
-    </div>  
+    </div> <br> 
 }
