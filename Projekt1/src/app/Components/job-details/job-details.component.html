@@ -1,0 +1,17 @@
+@for(job of data; track job){
+    <div class="Job-Details-Component-Main">
+        <div class="Job-Details-Component-Header">
+        {{job.title}}
+        
+        </div>
+        <div class="Job-Details-Component-Company">
+            {{job.location.display_name}}<br>
+            {{job.company.display_name}}
+        </div>
+        <div class="Job-Details-Component-Salary">
+            Salary:
+            {{job.salary_max}}
+        </div>
+        {{job.description}}
+    </div>  
+}
