@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { JobServicesService } from './Services/Features/job-services.service';
+import { JobDetailsComponent } from './Components/job-details/job-details.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet,JobDetailsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
