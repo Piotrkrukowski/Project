@@ -1,0 +1,16 @@
+a{
+    font-size: 1em;
+}
+a:link{
+    text-decoration: none;
+    color: green;
+}
+a:visited{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline; 
+}
+a:active{
+    text-decoration: none;  
+}

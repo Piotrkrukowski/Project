@@ -1,25 +1,27 @@
-@for(job of data; track job){
-    <div class="container bg-light job-block" style="border-radius: 30px;">
-        <div class="row">
-            <div class="col-12">
-                <div class="d-flex justify-content-center">
-                    {{job.title}}
-                </div>
+<div class="container">
+    @for(job of data; track job){
+        <div class="container bg-light" style="border-radius: 30px; margin-top: 10px;">
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex justify-content-center">
+                        <a href="{{job.redirect_url}}">{{job.title}}</a>
+                    </div>
             </div>
         </div>  
         <div class="row">
-            <div class="col-6">
+            <div class="col">
                 <div class="d-flex flex-row">
                     {{job.location.display_name}}
                     {{job.company.display_name}}
                 </div> 
             </div>
-            <div class="col-6">
+            <div class="col">
                 <div class="d-flex justify-content-end">
                     Salary:
                     {{job.salary_max}}
                 </div>
             </div>
         </div>
-    </div> <br> 
+    </div>
 }
+</div>

@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { SidebarComponent } from './sidebar.component';
+import { JobLocationComponent } from '../job-location/job-location.component';
+import { JobCategoryComponent } from '../job-category/job-category.component';
 
 describe('SidebarComponent', () => {
   let component: SidebarComponent;

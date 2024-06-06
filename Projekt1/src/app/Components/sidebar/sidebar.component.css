@@ -1,4 +1,11 @@
 .sidebar{
-    width: 15%;
+    width: 15vw;
+    height: 100vh;
     float: left;
+    border: gray 2px solid;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+input,select{
+    box-shadow: 10px 5px 5px gray;
 }

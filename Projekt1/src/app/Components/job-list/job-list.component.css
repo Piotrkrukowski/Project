@@ -1,4 +1,19 @@
-.job-list{
-    width: 40%;
-    margin: 10px;
+a{
+    font-size: 1em;
+}
+a:link{
+    text-decoration: none;
+    color: green;
+}
+a:visited{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline; 
+}
+a:active{
+    text-decoration: none;  
+}
+.box-shadow{
+    box-shadow: 10px 5px 5px gray;
 }

@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { JobServicesService } from '../../Services/Features/job-services.service';
+import { JobLocationComponent } from '../job-location/job-location.component';
+import { JobCategoryComponent } from '../job-category/job-category.component';
 
 @Component({
   selector: 'app-sidebar',
   standalone: true,
-  imports: [],
+  imports: [JobLocationComponent,JobCategoryComponent],
   templateUrl: './sidebar.component.html',
   styleUrl: './sidebar.component.css'
 })
