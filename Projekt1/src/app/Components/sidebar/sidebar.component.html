@@ -1,13 +1,16 @@
-    <div class="sidebar">
-        <div class="container">
-            <br>
-            <input type="number" class="form-control" placeholder="Salary From"><br>
-            <input type="number" class="form-control" placeholder="Salary To"><br>
-            <app-job-location></app-job-location><br>
-            <app-job-category></app-job-category><br>
-            <select class="form-select">
-                <option value="">Full-time</option>
-                <option value="">Part-time</option>
-            </select><br>
+        <div class="container content">
+            <form [formGroup]="form">
+                <input type="text" class="form-control" formControlName="occupation" placeholder="Occupation">
+                <input type="number" class="form-control" formControlName="salaryMin" placeholder="Salary From">
+                <input type="number" class="form-control" formControlName="salaryMax" placeholder="Salary To">
+                <app-job-category></app-job-category>
+                <select class="form-select" formControlName="jobType">
+                    <option value="">Select hours</option>
+                    <option value="JobType.FULL_TIME">Full-time</option>
+                    <option value="JobType.PART_TIME">Part-time</option>
+                </select>
+                <button class="btn btn-primary" 
+                (click)="prepareQuery()"
+                >Search</button>
+            </form>
         </div>
-    </div>

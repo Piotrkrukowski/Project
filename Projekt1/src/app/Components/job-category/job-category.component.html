@@ -1,4 +1,5 @@
-        <select class="form-select">
+        <select class="form-select" formControlName="jobCategory">
+            <option default>Select category</option>
             @for(category of data ; track category){
                 <option value="{{category.label}}">{{category.label}}</option>
             }

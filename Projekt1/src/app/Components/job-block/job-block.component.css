@@ -7,10 +7,25 @@ a:link{
 }
 a:visited{
     text-decoration: none;
+    color: green;
 }
 a:hover{
     text-decoration: underline; 
 }
 a:active{
     text-decoration: none;  
+}
+.job-block{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-around;
+    padding: 0 2rem;
+}
+.job-block-content{
+    border-radius: 8px; 
+    margin-top: 10px;
+    height: 15rem;
+    width: 15rem;
+    text-align: center;
 }

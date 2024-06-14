@@ -1,6 +1,6 @@
-<div class="container">
+<div class="container list">
     @for(job of data; track job){
-        <div class="container bg-light box-shadow" style="border-radius: 30px; margin-top: 10px; float: left;">
+        <div class="container bg-light box-shadow list-content">
             <ul>
                 <li><a href="{{job.redirect_url}}">{{job.title}}</a></li>
                 <li>{{job.location.display_name}}</li>

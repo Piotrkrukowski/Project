@@ -16,7 +16,7 @@ export class JobDetailsComponent implements OnInit{
   public data:any;
   
   ngOnInit(): void {
-    this.jobService.fetchPost().subscribe((result:any)=>{
+    this.jobService.fetchPost(10).subscribe((result:any)=>{
       this.data=result.results;
       console.log(this.data);
     })

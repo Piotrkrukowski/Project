@@ -7,6 +7,7 @@ a:link{
 }
 a:visited{
     text-decoration: none;
+    color: green;
 }
 a:hover{
     text-decoration: underline; 
@@ -14,6 +15,14 @@ a:hover{
 a:active{
     text-decoration: none;  
 }
-.box-shadow{
-    box-shadow: 10px 5px 5px gray;
+.list{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 2rem;
+}
+.list-content{
+    border-radius: 8px; 
+    margin-top: 10px;
 }
